@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javatpoint.model.Game;
-import com.javatpoint.service.GameService;
+import com.model.Game;
+import com.service.GameService;
 
 @RestController
 public class GameController {
