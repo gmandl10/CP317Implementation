@@ -53,8 +53,8 @@
     <p>The user is assumed to be familiar with using a browser to be able to navigate the website in order to link to the specific views or functions they want to perform.</p>
     <br/>
     -->
-    <tr th:each="league: ${leagues}">
     <div class="row">
+        <tr th:each="league: ${leagues}">
         <div class="column">
           <div class="card">
 	    <img th:src="@{${'league' + league.getId() + '.png'}}" alt="League 2" class="card-img"/>
@@ -65,8 +65,8 @@
             </div>
           </div>
         </div>
+        </tr>
     </div>
-    </tr>
       
     <!--
         <div class="column">
