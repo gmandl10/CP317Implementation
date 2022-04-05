@@ -8,7 +8,7 @@ For Windows:
 mvn spring-boot:run
 ``
 
-For Linux or Max:
+For Linux or Mac:
 ``
 ./mvnw spring-boot:run
 ``
