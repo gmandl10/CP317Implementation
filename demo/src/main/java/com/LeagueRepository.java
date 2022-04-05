@@ -1,6 +1,6 @@
-package com.javatpoint.repository;
+package com.repository;
 import org.springframework.data.repository.CrudRepository;
-import com.javatpoint.model.League;
+import com.model.League;
 public interface LeagueRepository extends CrudRepository<League,Integer>{
 
 }
