@@ -1,6 +1,6 @@
-package com.javatpoint.repository;
+package com.repository;
 import org.springframework.data.repository.CrudRepository;
-import com.javatpoint.model.Player;
+import com.model.Player;
 public interface PlayerRepository extends CrudRepository<Player,Integer>{
 
 }
