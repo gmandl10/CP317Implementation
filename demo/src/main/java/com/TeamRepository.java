@@ -1,6 +1,6 @@
-package com.repository;
+package com;
 import org.springframework.data.repository.CrudRepository;
-import com.model.Team;
+import com.Team;
 public interface TeamRepository extends CrudRepository<Team,Integer>{
 
 }
