@@ -14,6 +14,12 @@ public class League {
 @Column
 private int id;
 @Column
+private String league_name;
+@Column
+private String sport;
+@Column
+private String location;
+@Column
 private String team_name;
 @Column
 private List<Team> teams;
@@ -33,6 +39,25 @@ public String getTeam_name() {
 }
 public void setTeam_name(String team_name) {
 	this.team_name = team_name;
+}
+
+public void setLeague_name(String league_name) {
+	this.league_name = league_name;
+}
+public String getLeague_name() {
+	return this.league_name;
+}
+public void setSport(String sport) {
+	this.sport = sport;
+}
+public String getSport() {
+	return this.sport;
+}
+public void setLocation(String location) {
+	this.location = location;
+}
+public String getLocation() {
+	return this.location;
 }
 public List<Team> getTeams() {
 	return teams;
