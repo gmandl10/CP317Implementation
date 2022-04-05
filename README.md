@@ -13,6 +13,7 @@ For Linux or Mac:
 ``
 ./mvnw spring-boot:run
 ``
+
 The website will be running on local system at localhost:8080.
 
 **H2 Database**
