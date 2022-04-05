@@ -1,4 +1,4 @@
-package com.service;
+package com;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.model.Game;
-import com.repository.GameRepository;
+import com.Game;
+import com.GameRepository;
 
 @Service
 public class GameService {
