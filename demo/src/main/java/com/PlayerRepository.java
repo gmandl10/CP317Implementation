@@ -1,6 +1,6 @@
-package com.repository;
+package com;
 import org.springframework.data.repository.CrudRepository;
-import com.model.Player;
+import com.Player;
 public interface PlayerRepository extends CrudRepository<Player,Integer>{
 
 }
