@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head> 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>SideLines</title> 
     <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8" />
     <style type="text/css">
@@ -18,12 +19,18 @@
 
 </head>
 <body>
-    <div class="navbar">
-        <nav>
-            <a href="index.html">Home</a></li>
-            <a href="about.html">About</a></li>
-        <nav>
-    </div>
+	    <!--Navigation bar-->
+	<div id="nav-placeholder">
+
+	</div>
+
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("navbar.html");
+	});
+	</script>
+	<!--end of Navigation bar-->
+
     <div class="header">
         <img src = Sidelineslogo2.png alt = "SideLines Logo" class="header-img">
         
