@@ -1,4 +1,4 @@
-package com.service;
+package com;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.model.Team;
-import com.repository.TeamRepository;
+import com.Team;
+import com.TeamRepository;
 
 @Service
 public class TeamService {

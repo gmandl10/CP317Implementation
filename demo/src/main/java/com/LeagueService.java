@@ -1,4 +1,4 @@
-package com.service;
+package com;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.League;
+<<<<<<< HEAD
 import com.repository.LeagueRepository;
+=======
+import com.LeagueRepository;
+>>>>>>> e3a3f8d5f8af758a28237b3c65385709d6139df7
 
 @Service
 public class LeagueService {
