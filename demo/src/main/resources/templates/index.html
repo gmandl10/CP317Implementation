@@ -57,11 +57,11 @@
     <div class="row">
         <div class="column">
           <div class="card">
-            <img src="league1.png" alt="League 1" class="card-img">
+	    <img th:src="@{${'league' + league.getId() + '.png'}}" alt="League 2" class="card-img"/>
             <div class="container">
-              <h2>League 1</h2>
-              <p class="title">Soccer | Waterloo, ON</p>
-	      <p><a href = "/team?leagueid=l1&teamid=t1"><button class="button"><td th:text="See ${league.league_name}"></td></button></a></p>
+              <h2><td th:text="${league.getLeague_name()}"></td></h2>
+              <p class="title"><td th:text="${league.getSport()}"></td> | <td th:text="${league.getLocation()}"></td></p>
+	      <p><a href = "/leaguehomepage"><button class="button">See <td th:text="${league.getLeague_name()}"></td></button></a></p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
             <div class="container">
               <h2>League 2</h2>
               <p class="title">Hockey | Cambridge, ON</p>
-              <p><a href = "/team?leagueid=l2&teamid=t2"><button class="button">See League 2</button></a></p>
+              <p><a href = "/leaguehomepage"><button class="button">See League 2</button></a></p>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
             <div class="container">
               <h2>League 3</h2>
               <p class="title">BasketBall | Kitchener, ON</p>
-              <p><a href = "/team?leagueid=l3&teamid=t3"><button class="button">See League 3</button></a></p>
+              <p><a href = "/leaguehomepage"><button class="button">See League 3</button></a></p>
             </div>
           </div>
         </div>

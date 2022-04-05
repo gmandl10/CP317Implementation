@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import com.model.Team;
-import com.model.Player;
-import com.model.Game;
-import com.model.League;
+import com.Team;
+import com.Player;
+import com.Game;
+import com.League;
 
 @Controller
 public class IndexController {

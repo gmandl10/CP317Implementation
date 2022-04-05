@@ -57,7 +57,7 @@
     <div class="row">
         <div class="column">
           <div class="card">
-		  <img th:src="@{${'league' + league.getId() + '.png'}}" alt="League 2" class="card-img"/>
+	    <img th:src="@{${'league' + league.getId() + '.png'}}" alt="League 2" class="card-img"/>
             <div class="container">
               <h2><td th:text="${league.getLeague_name()}"></td></h2>
               <p class="title"><td th:text="${league.getSport()}"></td> | <td th:text="${league.getLocation()}"></td></p>
