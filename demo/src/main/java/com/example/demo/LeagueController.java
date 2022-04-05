@@ -9,16 +9,11 @@ import com.Team;
 
 import java.util.ArrayList;
 
-import com.League;
-
-
 @Controller
 public class LeagueController {
 
 	@GetMapping("/leaguehomepage")
 	public String league(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-		
-		League league = new League();
 
 		// get player info
 		Team a_team = new Team();

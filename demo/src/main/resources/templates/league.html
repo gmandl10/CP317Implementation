@@ -31,38 +31,30 @@
             <th>Record</th>
             </tr>
             
-            <tr onclick="document.location = '/team?leagueid=l1&teamid=t2';">
+            <tr onclick="document.location = '/team?leagueid=l1&teamid=t1';">
                 <td>1</td>
                 <td th:text="${teams[0].getTeam_name()}"></td>
                 <td th:text="${teams[0].getWins().toString() + ' - ' +  teams[0].getLosses().toString()}"></td>
             </tr>
             
-            <tr>
+            <tr onclick="document.location = '/team?leagueid=l1&teamid=t2';">
                 <td>2</a></td>
                 <td th:text="${teams[1].getTeam_name()}"><a href="/team?leagueid=l1&teamid=t2"></a></td>
                 <td th:text="${teams[1].getWins().toString() + ' - ' +  teams[1].getLosses().toString()}"><a href="/team?leagueid=l1&teamid=t2">4-3</a></td>
             </tr>
+
             <tr onclick="document.location = '/team?leagueid=l1&teamid=t3';">
                 <td><a href="/team?leagueid=l1&teamid=t3">3</td>
                 <td th:text="${teams[2].getTeam_name()}"></td>
                 <td th:text="${teams[2].getWins().toString() + ' - ' +  teams[2].getLosses().toString()}"></td>
             </tr>
+
             <tr onclick="document.location = '/team?leagueid=l1&teamid=t4';">    
                 <td><a href="/team?leagueid=l1&teamid=t4">4</a></td>
                 <td th:text="${teams[3].getTeam_name()}"><a href="/team?leagueid=l1&teamid=t4">Team 4</a></td>
                 <td th:text="${teams[3].getWins().toString() + ' - ' +  teams[3].getLosses().toString()}"><a href="/team?leagueid=l1&teamid=t4">3-4</a></td>
             </tr>
 
-            <!-- <tr th:each="team : ${teams}">
-               <td th:text="${team.getTeam_name}"></td>
-                <td th:text="${player.lastname}"></td>
-                 <td th:text="${player.jersey_num}"></td>
-                  <td th:text="${player.goals}"></td>
-                   <td th:text="${player.assists}"></td>
-                <td ><a href="/team?leagueid=l1&teamid=t5">1</a></td>
-                <a href="/team?leagueid=l1&teamid=t5"><td th:text="${team.getTeam_name()}"></td></a>
-                <td th:text="${team.getWins().toString() + '-' +  team.getLosses().toString()}"><a href="/team?leagueid=l1&teamid=t5">2-5</a></td>
-            </tr> -->
         </table>
     </div>
 </body>
