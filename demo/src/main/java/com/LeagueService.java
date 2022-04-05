@@ -1,4 +1,4 @@
-package com.javatpoint.service;
+package com.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.javatpoint.model.League;
-import com.javatpoint.repository.LeagueRepository;
+import com.model.League;
+import com.repository.LeagueRepository;
 
 @Service
 public class LeagueService {
