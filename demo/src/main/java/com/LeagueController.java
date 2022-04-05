@@ -1,4 +1,4 @@
-package com.javatpoint.controller;
+package com.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javatpoint.model.League;
-import com.javatpoint.service.LeagueService;
+import com.model.League;
+import com.service.LeagueService;
 
 @RestController
 public class LeagueController {
