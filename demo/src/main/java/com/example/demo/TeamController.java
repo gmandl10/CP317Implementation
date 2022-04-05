@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import com.model.Team;
-import com.model.Player;
-import com.model.Game;
+import com.Team;
+import com.Player;
+import com.Game;
 
 @Controller
 public class TeamController {
