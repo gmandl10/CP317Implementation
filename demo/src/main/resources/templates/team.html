@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Team Homepage</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }   
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+     <h1 th:text="${teamName}" style="text-align:center"></h1>
+    
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container"> 
+            <img src="team1.png" width = 100 height = 100 alt="Team 1" class="card-img">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Roster')">Roster</button>
+      <button class="tablinks" onclick="openCity(event, 'Previous Games')">Previous Games</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Roster" class="tabcontent">
+      <h3>Roster</h3>
+        <div style="overflow-x:auto;">
+          <table>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Number</th>
+              <th>Goals</th>
+              <th>Assists</th>         
+            </tr>
+            <tr th:each="player : ${players}"> <!-- For each player in the list -->
+               <!-- Computer will do this for us-->
+              <td th:text="${player.firstName}"></td>
+               <td th:text="${player.lastname}"></td>
+                <td th:text="${player.jersey_num}"></td>
+                 <td th:text="${player.goals}"></td>
+                  <td th:text="${player.assists}"></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <div id="Previous Games" class="tabcontent">
+      <h3>Previous Games</h3>
+      <div style="overflow-x:auto;">
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Team</th>
+              <th>Location</th>
+              <th>Score</th>
+            </tr>
+            <tr th:each="game : ${games}">
+               <td th:text="${game.date}"></td>
+               <td th:text="${game.team2.team_name}"></td>
+                <td th:text="${game.location}"></td>
+                 <td th:text="${game.result}"></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+    // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    </script>
+
+</body>
+</html>
