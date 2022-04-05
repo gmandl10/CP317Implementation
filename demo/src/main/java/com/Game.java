@@ -24,6 +24,8 @@ private LocalTime time;
 private String location;
 @Column
 private Date date;
+@Column
+private String result; // assume team 1 vs team 2 so W 2-0 means team 1 won 2 points and team 2 loss
 public Team getTeam1() {
 	return team1;
 }
@@ -59,5 +61,11 @@ public Date getDate() {
 }
 public void setDate(Date date) {
 	this.date = date;
+}
+public String getResult() {
+	return result;
+}
+public void setResult(String result) {
+	this.result = result;
 }
 }
