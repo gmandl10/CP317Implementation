@@ -1,4 +1,4 @@
-package com.controller;
+package com;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.model.Team;
-import com.service.TeamService;
+import com.Team;
+import com.TeamService;
 
 @RestController
 public class TeamController {
