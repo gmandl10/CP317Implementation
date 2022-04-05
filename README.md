@@ -30,5 +30,8 @@ For this project we have the following pages created:\
 
 **Not Implemented**\
 For this project we did not create the following pages:\
-*Sign- In / Sign-Up page:* certain users to be given different views ie create leagues, add points.\
-*Player Statistics page:* when you select the player from the team homepage you would see their specific statistics in more detail.
+*Sign- In / Sign-Up page:* certain users to be given different views i.e. create leagues, add points.\
+*Player Statistics page:* when you select the player from the team homepage you would see their specific statistics in more detail.\
+*League schedule:* in the league homepage we also want to have a tab so we can see the schedule for all games.\
+*League search:* a page where users can search for specific leagues.\
+*Page to upload statistics:* a page accessible only by authorized users that would allow them to update game and team information.
